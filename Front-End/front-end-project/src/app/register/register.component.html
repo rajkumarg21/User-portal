@@ -1,0 +1,25 @@
+<div calss="container mt-4">
+    <div calss="card">
+        <h1>Employee Registration</h1>
+<form>
+    <div class="form-group">
+      <label >user_Name</label>
+      <input type="txt"[(ngModel)]="user_name"[ngModelOptions]="{standalone:true}" class="form-control"  placeholder="Enter User Name"/>
+     </div>
+     <div class="form-group">
+        <label >password</label>
+        <input type="txt" [(ngModel)]="password"[ngModelOptions]="{standalone:true}" class="form-control"  placeholder="Enter your password"/>
+       </div>
+       <div class="form-group">
+        <label >phone_number</label>
+        <input type="txt" [(ngModel)]="phone_number"[ngModelOptions]="{standalone:true}"class="form-control"  placeholder="phone Number"/>
+       </div>
+       <div class="form-group">
+        <label >email</label> 
+        <input type="email" [(ngModel)]="email"[ngModelOptions]="{standalone:true}"class="form-control"  placeholder="Enter User Email"/>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)="save()">Register</button>
+  </form>
+</div>
+</div>
